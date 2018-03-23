@@ -19,7 +19,7 @@ Command:
 </form>
 </html>
 """
-
+l
 #Setup PINS
 
 pin=machine.Pin(15,machine.Pin.OUT)
@@ -29,6 +29,7 @@ np=NeoPixel(pin,30)
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('', 80))
 s.listen(5)
+# xxx need to catch kill to clean up after interrupt
 
 def run():
     print("Waiting for connection...")
