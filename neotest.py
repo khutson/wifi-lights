@@ -5,8 +5,8 @@ import time
 
 def setup(pin_number=15,num_lights=30):
     global np
-    pin=Pin(15,Pin.OUT)
-    np=NeoPixel(pin,30)
+    pin=Pin(pin_number,Pin.OUT)
+    np=NeoPixel(pin,num_lights)
 
 def run():
     global np

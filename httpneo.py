@@ -19,7 +19,7 @@ Command:
 </form>
 </html>
 """
-l
+
 #Setup PINS
 
 pin=machine.Pin(15,machine.Pin.OUT)
